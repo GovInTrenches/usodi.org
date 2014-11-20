@@ -16,7 +16,7 @@ But in reality, it's a lot more complicated to get the data from the streets to 
 
 This is Plow Truck #S11701 just before a snow storm. It's parked on a main road with it's engines running in preperation for a long night of clearing the streets. These trucks are big Freightliners that are easily some of the largest vechiles on the road in the city. Armed with (?) pounds of salt and a thick heavy steel plow, they push snow to the side of the roads while dumping salt behind them. It's one of the reasons that you can't park on major thoroughfares in the winter - that's where the snow goes. Cars that don't move get at minimum a tidal wave of snow/salt slush thrown at your car or at worse the city will tow your car. 
 
-The city also has attached 'quick-hitch' snow plows to about sixty garbage trucks to help stem the tide. 
+The city has about 284 snowplows that it can deploy. The city also has attached 'quick-hitch' snow plows to about 150 garbage trucks to help stem the tide when things get really bad. 
 
 Each of these trucks has a GPS device inside that sends location data back to Snow Command. It looks like this: 
 
@@ -24,6 +24,18 @@ It's a (?) brand that sends back signals via (?).
 
 ## From Truck to Snow Command 
 
+The data then leaves the truck and gets to Snow Command. Snow Command is ground zero for city operations during a snow event. Here's a look at what they do: 
+
+http://youtu.be/pySFAnfcv0A 
+
+Snow Command doesn't just use the GPS tracker data to put dots (or in this case plow icons) on a map. Snow Command uses a vareity of weather data, street cameras, street sensors, and other information to deterime if they need to shift resources to a particuar area. 
+
 ## Snow Command to Plow Tracker 
 
+Snow Command uses the website [www.chicagoshovels.org](chicagoshovels.org) to show where the plows are at all time using the GPS data. 
+
 ## PlowTracker to Volunteer Apps 
+
+The PlowTracker has it's own [https://gisapps.cityofchicago.org/ArcGISRest/services/ExternalApps/operational/MapServer/38/query?f=json&where=OBJECTID%20is%20not%20null%20AND%20POSTING_TIME%20%3E%20SYSDATE-1%2F96&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=ADDRESS%2CPOSTING_TIME%2CASSET_NAME%2CASSET_TYPE%2COBJECTID](data feed). The team over at OpenCity Apps took this data feed and used it to power their own plow tracker called [ClearStreets.org](ClearStreets). 
+
+Clearstreets scrapes the data from the feed and then uses that data to draw traces showing where the plows _have been_. It then records all the information so it can be reviewed later. A neat trick is that they can do animations of the latest snowstorm using the tracker data. 
