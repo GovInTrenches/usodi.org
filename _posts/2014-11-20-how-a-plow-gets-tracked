@@ -1,0 +1,19 @@
+#How A Plow Gets Tracked 
+
+It's winter here in Chicago, which means one thing with absolutly certainity. 
+
+Snow. 
+
+In a city that does not stop for winter, it's vital that the streets get plowed so that residents can move about. For the past three years, the City of Chicago has run a plow tracker which allows residents to see where the plows are based on GPS devices inside the plows.. The site is also easily scrapable so that volunteer developers can build sites like Clearstreets.org that run on top of the platform. 
+
+It would be easy to stop the story here. We built a thing, here's the thing, use the thing! 
+
+But in reality, it's a lot more complicated to get the data from the streets to the website. So, we wanted to take a deep dive and do our own tracking as we follow the data from it's start to where it shows up on your screen. 
+
+## Plow Trucks - The Unsung Heros of Winter 
+
+## From Truck to Snow Command 
+
+## Snow Command to Plow Tracker 
+
+## PlowTracker to Volunteer Apps 
